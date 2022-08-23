@@ -1,0 +1,426 @@
+:root{
+    --brand-color1: #2F303A;/*background*/
+    --brand-color2: #2196F3;
+    --brand-font:'Roboto';
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: 300px;
+    flex-direction: row;
+    color: var(--brand-color1);
+}
+li>a{
+    text-decoration: none;
+    color: var(--brand-color1);
+}
+nav a:hover{
+    color: var(--brand-color2);
+    border-bottom: #2196F3;
+}
+div > a{
+    text-decoration: none;
+}
+.menu_contact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.tel{
+    color:var(--brand-color1);
+    font-size: 14px;
+
+}
+.tel_logo{
+    width: 12px;
+    height: 16px;
+    align-self: flex-end;
+}
+.tel_logo:hover{
+    fill: var(--brand-color2);
+}
+.tel_contact{
+    justify-content: flex-end;
+}
+.tel_contact:hover > .tel_logo {
+    fill:var(--brand-color2);
+    color: var(--brand-color2);
+}
+.tel_contact:hover > .tel{
+    color:#2196F3;
+    fill:var(--brand-color2)
+}
+
+.email{
+    display: flex;
+    justify-items:stretch;
+    margin-right: 10px;
+    /*align-items: center; */
+}
+.correo{
+    font-family: 12px;
+    text-decoration: none;
+    color: var(--brand-color1);
+}
+.correo:hover{
+    color:var(--brand-color2)
+}
+.email_logo{
+    width: 12px;
+    height: 16px;
+    padding: 2px;
+}
+.email:hover > .email_logo {
+    fill:var(--brand-color2);
+}
+.email:hover > .correo{
+    color:#2196F3;
+}
+
+.logo{
+    position: relative;
+    top: 10px;
+    left: 40px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.menu, .contact{
+    text-decoration: none;
+    color: var(--brand-color1);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 25px 15px 0px 15px;
+    padding-top: 25px;
+    display: inline;
+}
+.menu:hover {
+    color:var(--brand-color2)
+}
+.menu:link{
+    color:var(--brand-color1)
+}
+ul.menu-list{
+    padding-top: 10%;
+}
+body{
+    align-items: center;
+    font-family: var(--brand-font);
+    text-align: center;
+}
+.first-button{
+    color:#FFFFFF;
+    width: 197px;
+    height: 30px;
+    padding: 20px 20px;
+    background-color: var(--brand-color2);
+    border-bottom: none;
+
+    margin: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+a{
+    text-decoration: none; /*sin subrayado*/
+}
+.nine-container > a:visited {
+    color: var(--brand-color1);
+}
+.flex-container{ /*index*/
+    display: flex;
+    max-width: calc(1200px);
+    justify-content: space-between;
+    
+ 
+}
+.text-containers{
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: 100px;
+}
+.img_atencionDetalle{
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 30px 70px;
+
+    background-color:#F5F4FA;
+    border-color:  #5c44d4;
+    
+}
+.container{
+    box-sizing: border-box;
+    max-width: calc(1200px);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg{/* position: absolute; index*/
+    width: 1600px;
+    height: 600px;
+    top: 60px;
+    background: rgba(47, 48, 58, 0.4);
+    background-image: url("/GOIT/goit-markup-hw-03/images/bg.jpg");
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+h1{
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 200px 0 0 0;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-buttton{/* Solicite nuestro servicio */
+    width: 197px;
+    height: 30px;
+    padding: 20px 10px 20px 10px;
+    background-color: var(--brand-color2);
+    border-bottom: none;
+    border-radius: 0px;
+    margin: 10px 10px 10px 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.button-main{
+    background: #F5F4FA;
+    border: none;
+    
+    padding: 10px 10px 15px 10px;
+    
+    width: 120px;
+    height: 36px;
+    /* left: calc(50% - 98px/2 - 16px);
+    top: calc(50% - 26px/2 - 735px);*/
+
+    font-family: var(--brand-color2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+.button-main:hover{
+    background: var(--brand-color2);
+    color:white;
+    border: none;
+    font-weight: 500;
+}
+.text-containers{
+    padding: 25px;
+    margin: 25px;
+    width: 250px;
+}/*
+.aQueNosDedicamos{
+    width: 360px;
+    height: 200px;
+    position: absolute;
+}*/
+
+
+.txt-box{
+    background: rgba(47, 48, 58, 0.8);
+    width: 360px;
+    height: 70px;
+    position: relative;
+    bottom: 73px;
+    color: #fff;
+    
+}
+ul{
+    list-style: none;
+}
+.large-section{
+    width: 1600px;
+    background-color: #F5F4FA;
+    margin: 100px;
+    padding-bottom: 80px;
+    
+}
+.personas_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.pers-rrss{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 5px;
+}
+.pers-rrss:hover{
+    background-color: var(--brand-color2);
+}
+.pers-rrss_img{
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    padding: 8px;
+    margin: 5px;
+    fill:#AFB1B8;
+}
+.pers-rrss_img:hover{
+    fill:#fff;
+}
+.nine-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+   
+    /*left: calc(50% - 370px/2 - 400px);*/
+}
+img{
+    width: 100%;
+    justify-content: center;
+}
+figure{
+    margin: 10px;
+    padding: 10px;
+}
+figure:hover{
+    box-shadow: rgba(0.24, 0.24, 0.24, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    color: #212121;
+    text-decoration: #212121;
+}
+.img-catalogue{
+    box-sizing: content-box;
+    width: 30%;
+    margin-right: 30px;
+}
+.clients{
+    display: flex;
+    max-width: calc(1200px);
+    justify-content: space-around;
+    align-content: center;
+    
+    margin-bottom: 100px;
+    
+}
+.clientLink{
+    justify-content: space-around;
+    width: 81px;
+    height: 40px;
+    
+    padding: 10px 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.flex-container2{
+    display: flex;
+    max-width: calc(1200px);
+    justify-content: center;
+}
+footer{
+    width: 1600px;
+    height: 252px;
+    text-align: left;
+    font-family: var(--brand-font);
+    font-size: 14px;
+    line-height: 24px;
+    bottom: 0px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding: 10px;
+    left: 10%;
+    background: var(--brand-color1);
+    display: flex;
+    margin: auto;
+}
+
+.footer-aling{
+    display: flex;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+footer a:hover{
+    color: var(--brand-color2);
+    fill: #2196F3;
+}
+
+.rrss{
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 200px;
+    
+    display: block;
+    flex-direction: row;
+}
+.rrss p {
+    font-family: var(--brand-font);
+    text-align: justify;
+}
+.foot-group-rrss{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.footrrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+}
+.footrrss:hover{
+    background-color: var(--brand-color2);
+    fill:var(--brand-color2)
+}
+.footrrss-img{
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    
+    fill:#AFB1B8;
+}
+.footrrss-img:hover{
+    fill:#fff;
+    
+}
