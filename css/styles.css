@@ -3,13 +3,23 @@
     --brand-color2: #2196F3;
     --brand-font:'Roboto';
 }
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;    
+    border-bottom: 2px solid #2f303153;
+    position: relative;
+}
 nav{
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin-left: 300px;
+    justify-content: space-around;
+    width: 1200px;
+    height: 80px;
+    padding-bottom: 10px;
     flex-direction: row;
     color: var(--brand-color1);
+    align-items: center;
+    text-size-adjust: 14px;   
 }
 li>a{
     text-decoration: none;
@@ -17,7 +27,18 @@ li>a{
 }
 nav a:hover{
     color: var(--brand-color2);
-    border-bottom: #2196F3;
+    border-bottom: var(--brand-color2);
+}
+.menu-list a:hover::after{
+    content: "";
+    background-color: var(--brand-color2);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 20px);
+    width: 98%;
+    height: 4px;
+    opacity:1;
+    transition: opacity 0.1ss;
 }
 div > a{
     text-decoration: none;
@@ -26,14 +47,12 @@ div > a{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    
+    font-size: 14px;
 }
 .tel{
     color:var(--brand-color1);
     font-size: 14px;
-
 }
 .tel_logo{
     width: 12px;
@@ -80,11 +99,10 @@ div > a{
 .email:hover > .correo{
     color:#2196F3;
 }
-
 .logo{
     position: relative;
-    top: 10px;
-    left: 40px;
+    
+    left: 16%;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -93,7 +111,6 @@ div > a{
     letter-spacing: 0.03em;
     color: #2196F3;
 }
-
 .menu, .contact{
     text-decoration: none;
     color: var(--brand-color1);
@@ -103,19 +120,21 @@ div > a{
     padding-top: 25px;
     display: inline;
 }
+.menu{
+    position: relative;
+    
+}
 .menu:hover {
     color:var(--brand-color2)
 }
 .menu:link{
     color:var(--brand-color1)
 }
-ul.menu-list{
-    padding-top: 10%;
-}
 body{
     align-items: center;
     font-family: var(--brand-font);
     text-align: center;
+    margin: 0px;
 }
 .first-button{
     color:#FFFFFF;
@@ -134,34 +153,31 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
 }
-
+h2{
+    padding: 50px 0;
+    
+}
 a{
     text-decoration: none; /*sin subrayado*/
-}
-.nine-container > a:visited {
-    color: var(--brand-color1);
 }
 .flex-container{ /*index*/
     display: flex;
     max-width: calc(1200px);
     justify-content: space-between;
-    
- 
 }
 .text-containers{
     box-sizing: border-box;
     justify-content: center;
     margin-top: 100px;
 }
+
 .img_atencionDetalle{
     justify-content: center;
     width: 50px;
     height: 50px;
     padding: 30px 70px;
-
     background-color:#F5F4FA;
     border-color:  #5c44d4;
-    
 }
 .container{
     box-sizing: border-box;
@@ -172,12 +188,12 @@ a{
 }
 
 .bg{/* position: absolute; index*/
-    width: 1600px;
+    width: 100%;
     height: 600px;
-    top: 60px;
+    padding-top: 1px;
     background: rgba(47, 48, 58, 0.4);
-    background-image: url("/GOIT/goit-markup-hw-03/images/bg.jpg");
-    align-items: center;
+    background-image: url("../images/bg.jpg");
+    align-items: flex-start;
     justify-content: center;
     margin: auto;
 }
@@ -214,12 +230,18 @@ h1{
 
     color: #FFFFFF;
 }
-
+.main-menu{
+    margin: 30px 0 50px ;
+}
+.buttons{
+    margin-top: 100px;
+}
 .button-main{
     background: #F5F4FA;
     border: none;
     
-    padding: 10px 10px 15px 10px;
+    padding: 10px 10px 30px 10px;
+    border-radius: 4px;
     
     width: 120px;
     height: 36px;
@@ -248,17 +270,11 @@ h1{
     padding: 25px;
     margin: 25px;
     width: 250px;
-}/*
-.aQueNosDedicamos{
-    width: 360px;
-    height: 200px;
-    position: absolute;
-}*/
-
+}
 
 .txt-box{
     background: rgba(47, 48, 58, 0.8);
-    width: 360px;
+    width: 100%;
     height: 70px;
     position: relative;
     bottom: 73px;
@@ -269,11 +285,10 @@ ul{
     list-style: none;
 }
 .large-section{
-    width: 1600px;
+    width: 100%;
     background-color: #F5F4FA;
-    margin: 100px;
-    padding-bottom: 80px;
     
+    padding-bottom: 80px;
 }
 .personas_contacto{
     display: flex;
@@ -287,11 +302,15 @@ ul{
     flex-direction: row;
     border-radius: 50%;
     background-color: #fff;
-    margin: 5px;
+    /*margin: 5px;*/
 }
 .pers-rrss:hover{
     background-color: var(--brand-color2);
+    fill:#fff;
 }
+.pers-rrss:hover > .pers-rrss_img{
+    fill:#fff;
+} 
 .pers-rrss_img{
     width: 20px;
     height: 20px;
@@ -303,22 +322,73 @@ ul{
 .pers-rrss_img:hover{
     fill:#fff;
 }
+
 .nine-container{
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    align-items: center;
     text-align: left;
-    justify-content: center;
-   
-    /*left: calc(50% - 370px/2 - 400px);*/
+    gap:30px;
+    justify-content: space-around;   
+    left: calc(50% - 370px);
+
 }
+.nine-container > a:visited {
+    color: var(--brand-color1);
+}
+.card-imgcatalogue{
+    box-sizing: content-box;
+    width: 370px;
+    height: 420px;
+}
+p{
+    margin-left: 10px;
+}
+.reverse{
+    display: none;
+    position: relative;
+    width: 228px;
+    height: 165px;
+    bottom: 315px;
+    background-color: rgba(65, 153, 246, 0.80);
+    color:#fff;
+    padding: 30px;
+    text-align: justify;
+    bottom: 318px;
+}
+.card-imgcatalogue > .reverse{
+    display: flex;
+    animation-name: animacion;
+    animation-duration: 1s;
+}
+.reverse:hover{ 
+    transform: skew();
+    display: flex;
+    position: absolute;
+}
+@keyframes animacion{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+} 
+
 img{
     width: 100%;
     justify-content: center;
 }
 figure{
-    margin: 10px;
-    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 10px;
+}
+.card_nineimg:hover{
+    height: 350px;   
+}
+.card_nineimg:hover > image{
+    height: 350px;   
 }
 figure:hover{
     box-shadow: rgba(0.24, 0.24, 0.24, 0.24) 0px 3px 8px;
@@ -326,36 +396,46 @@ figure:hover{
     color: #212121;
     text-decoration: #212121;
 }
-.img-catalogue{
-    box-sizing: content-box;
-    width: 30%;
-    margin-right: 30px;
+figure:hover > .img-cataloge{
+    height: 270px;
 }
+
 .clients{
     display: flex;
-    max-width: calc(1200px);
+    max-width: 1200px;
     justify-content: space-around;
     align-content: center;
-    
     margin-bottom: 100px;
-    
 }
 .clientLink{
     justify-content: space-around;
     width: 81px;
     height: 40px;
-    
     padding: 10px 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    fill: var(--brand-color2);
 }
+.clientLink:hover{
+    fill: var(--brand-color2);
+
+}
+.client-companies:hover{
+    fill: var(--brand-color2);
+    border-color: var(--brand-color2);
+}
+.client-companies:hover > .clientLink{
+    fill: var(--brand-color2);
+    border-color: var(--brand-color2);
+}
+
 .flex-container2{
     display: flex;
-    max-width: calc(1200px);
-    justify-content: center;
+    max-width: 1200px;
+    justify-content: space-around;
 }
 footer{
-    width: 1600px;
+    width: 100%;
     height: 252px;
     text-align: left;
     font-family: var(--brand-font);
@@ -370,7 +450,6 @@ footer{
     display: flex;
     margin: auto;
 }
-
 .footer-aling{
     display: flex;
 }
@@ -382,11 +461,10 @@ footer a:hover{
     color: var(--brand-color2);
     fill: #2196F3;
 }
-
 .rrss{
     margin-left: 50px;
     margin-top: 30px;
-    width: 200px;
+    width: 150px;
     
     display: block;
     flex-direction: row;
@@ -397,7 +475,7 @@ footer a:hover{
 }
 .foot-group-rrss{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
@@ -409,18 +487,18 @@ footer a:hover{
     border-radius: 50%;
     width: 30px;
 }
-.footrrss:hover{
+.footrrss:hover > .footrrss-img{
     background-color: var(--brand-color2);
-    fill:var(--brand-color2)
+    border-radius: 50%;
 }
 .footrrss-img{
     width: 30px;
     height: 30px;
     justify-content: center;
-    
-    fill:#AFB1B8;
+}
+.foot__svg_rrss:hover{
+    fill: var(--brand-color2);
 }
 .footrrss-img:hover{
-    fill:#fff;
-    
+    fill:var(--brand-color2);   
 }

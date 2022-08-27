@@ -14,29 +14,34 @@
     <title>Portfolio</title>
 </head>
 <body>    
-    <nav>
-        <div><a class="logo" href="index.html"><h4>WebStudio</h4></a><!--Logo WebStudio--></div>
-        <div class="menu-container">
-            <ul class="menu-list">
-                <li class="menu"><a href="index.html">Estudio</a></li>
-                <li class="menu"><a href="portafolio.html">Portfolio</a></li>
-                <li class="menu"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        
-        <div class="menu_contact">
-            <div class="email"><!--<a href="mailto:info@devstudio.com">-->
-                <svg  class="email_logo" ><use href="./images/symbol-defs.svg#icon-mail2"></use></svg>
-                <a class="correo" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <header>
+        <nav class="line">
+            <div class="logo_header"><!--Linea Superior-->
+                <a class="logo" href="index.html"><h4>WebStudio</h4></a><!--Logo WebStudio-->
+            </div> 
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu selected" ><a href="index.html">Estudio</a></li>
+                    <li class="menu selected"><a href="portafolio.html"  class="selected">Portfolio</a></li>
+                    <li class="menu selected"><a href="contacto.html"  class="selected">Contacto</a></li>
+                </ul>
             </div>
-            <div class="tel_contact">
-                <svg  class="tel_logo" ><use href="./images/symbol-defs.svg#icon-mobile"></use></svg>
-                <a class="tel" href="tel:+525555296000">+52 55 5529 6000</a>
-            </div>
-        </div>
-    </nav>
+            
+            
+                <div class="menu_contact">
+                    <div class="email"><!--<a href="mailto:info@devstudio.com">-->
+                        <svg  class="email_logo" ><use href="./images/symbol-defs.svg#icon-mail2"></use></svg>
+                        <a class="correo" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <div class="tel_contact">
+                        <svg  class="tel_logo" ><use href="./images/symbol-defs.svg#icon-mobile"></use></svg>
+                        <a class="tel" href="tel:+525555296000">+52 55 5529 6000</a>
+                    </div>
+                </div>
+        </nav>
+    </header>
     
-    <div><!-- La navegación а otros sitios -->
+    <div class="buttons"><!-- La navegación а otros sitios -->
         <button class="button-main" href="">Todo</button>
         <button class="button-main" href="">Sitio Web</button>
         <button class="button-main" href="">Aplicaciones</button>
@@ -47,89 +52,106 @@
     <section class="container">
         <h2>Nuestro Equipo</h2>                
         <div class="nine-container">
-            <div class="img-catalogue">
-                <a href="" target="_blank"><figure>
-                    <img src="images/1Tecnoduck.jpg"  alt="Vista previa del Sitio Web Tecnoduck" width="370">
-                    <figcaption>
-                        <p><b>Tecnoduck</b></p>
-                        <p>Sitio Web</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="" target="_blank">
+                    <figure class="img-cataloge">
+                        <img src="images/1Tecnoduck.jpg"  alt="Vista previa del Sitio Web Tecnoduck" width="370">
+                        <figcaption>
+                            <p><b>Tecnoduck</b></p>
+                            <p>Sitio Web</p>
+                        </figcaption>
+                    </div>
+                </a>
+            </figure>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/2posternba.jpg" alt="Diseño del Póster de Nueva Orleans vs Estrella Dorada" width="370">
+                        <figcaption>
+                            <p><b>Póster de Nueva Orleans vs Estrella Dorada</b></p>
+                            <p>Diseño</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/2posternba.jpg" alt="Diseño del Póster de Nueva Orleans vs Estrella Dorada" width="370">
-                    <figcaption>
-                        <p><b>Póster de Nueva Orleans vs Estrella Dorada</b></p>
-                        <p>Diseño</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/3seafoo.jpg" alt="Logo del restaurante Seafood" width="370">
+                        <figcaption>
+                            <p><b>Restaurante Seafood</b></p>
+                            <p>Aplicaciones</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/3seafoo.jpg" alt="Logo del restaurante Seafood" width="370">
-                    <figcaption>
-                        <p><b>Restaurante Seafood</b></p>
-                        <p>Aplicaciones</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/4proyectop.jpg" alt="Audifonos" width="370">
+                        <figcaption>
+                            <br>
+                            <p><b>Proyecto Prime</b></p>
+                            <p>Marketing</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/4proyectop.jpg" alt="Audifonos" width="370">
-                    <figcaption>
-                        <br>
-                        <p><b>Proyecto Prime</b></p>
-                        <p>Marketing</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/5cajas.jpg" alt="Cajas" width="370">
+                        <figcaption>
+                            <p><b>Proyecto Cajas</b></p>
+                            <p>Aplicaciones</p>
+                        </figcaption>
+                    </figure></a>
             </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/5cajas.jpg" alt="Cajas" width="370">
-                    <figcaption>
-                        <p><b>Proyecto Cajas</b></p>
-                        <p>Aplicaciones</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/6inspiracion.jpg" alt="Preview del Sitio Web la inspitación no tiene límites" width="370">
+                        <figcaption>
+                            <p><b>La inspiración no tiene límites</b></p>
+                            <p>Sitio-web</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/6inspiracion.jpg" alt="Preview del Sitio Web la inspitación no tiene límites" width="370">
-                    <figcaption>
-                        <p><b>La inspiración no tiene límites</b></p>
-                        <p>Sitio-web</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/7libro.jpg" alt="Diseño de Libro Edición Limitada" width="370">
+                        <figcaption>
+                            <p><b>Edición Limitada</b></p>
+                            <p>Diseño</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/7libro.jpg" alt="Diseño de Libro Edición Limitada" width="370">
-                    <figcaption>
-                        <p><b>Edición Limitada</b></p>
-                        <p>Diseño</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/8proylab.jpg" alt="Disño de Etiqueta Proyecto Lab" width="370">
+                        <figcaption>
+                            <br>
+                            <p><b>Proyecto LAB</b></p>
+                            <p>Marketing</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/8proylab.jpg" alt="Disño de Etiqueta Proyecto Lab" width="370">
-                    <figcaption>
-                        <br>
-                        <p><b>Proyecto LAB</b></p>
-                        <p>Marketing</p>
-                    </figcaption>
-                </figure></a>
-            </div>
-            <div class="img-catalogue">
-                <a href=""><figure>
-                    <img src="images/9negocio.jpg" alt="Pantalla de la Aplicación Negocio en crecimiento" width="370">
-                    <figcaption>
-                        <br>
-                        <p><b>Negocio en Crecimiento</b></p>
-                        <p>Aplicaciones</p>
-                    </figcaption>
-                </figure></a>
+            <div class="card-imgcatalogue">
+                <a href="">
+                    <figure class="imgcatalogue">
+                        <img src="images/9negocio.jpg" alt="Pantalla de la Aplicación Negocio en crecimiento" width="370">
+                        <figcaption>
+                            <br>
+                            <p><b>Negocio en Crecimiento</b></p>
+                            <p>Aplicaciones</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
         </div>
     </section>
